@@ -6,42 +6,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>TripWay</title>
   </head>
   <body style="font-family: Poppins">
-    <nav>
-      <a href="#sobre-a-tripway">TripWay</a>
-      <ul>
-        <li><a href="./pages/destinos.html">Destinos</a></li>
-        <li><a href="./pages/pacotes.html">Pacotes</a></li>
-        <li><a href="./pages/contato.html">Contato</a></li>
-    </nav>
-
     <header>
-      <h1>
-        Descubra novos destinos e experiências com a TripWay.
-      </h1>
+      <nav>
+        <a href="./index.html">
+          <p>TripWay</p>
+        </a>
 
-      <img src="./images/fernando-de-noronha.png" alt="Vista aérea de Fernando de Noronha com mar azul e coqueiros" width="600" height="400" />
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/destinos.html">Destinos</a></li>
+          <li><a href="./pages/pacotes.html">Pacotes</a></li>
+          <li><a href="./pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <h1>Descubra novos destinos e experiências com a TripWay.</h1>
+
+      <img
+        src="./images/banner.jpg"
+        alt="Vista aérea de Fernando de Noronha com mar azul e coqueiros"
+        width="600"
+        height="400"
+      />
+
+      <p>Viagens que começam com um destino e terminam em histórias.</p>
     </header>
 
     <main>
       <section>
-        <h3 style="font-weight: normal">
-          Viagens que começam com um destino e terminam em histórias.
-        </h3>
-      </section>
+        <h2>Viagens em destaque</h2>
 
-      <section>
         <article>
           <div>
-            <h2 style="font-weight: regular">BRASIL</h2>
+            <p>BRASIL</p>
 
-            <h3 style="font-weight: normal">Praia do Forte</h3>
+            <h2 style="font-weight: normal">Praia do Forte</h2>
 
             <img
-              src="./images/praiadoforte.jpg"
+              src="./images/praia.jpg"
               alt="Praia do Forte"
               width="400"
               height="250"
@@ -55,12 +63,12 @@
 
         <article>
           <div>
-            <h2 style="font-weight: regular">BRASIL</h2>
+            <p>BRASIL</p>
 
-            <h3 style="font-weight: normal">Chapada Diamantina</h3>
+            <h2 style="font-weight: normal">Chapada Diamantina</h2>
 
             <img
-              src="./images/chapada.png"
+              src="./images/montanha.jpg"
               alt="Paisagem da Chapada Diamantina"
               width="400"
               height="250"
@@ -71,18 +79,18 @@
             <a href="./pages/destinos.html"> Conhecer roteiro </a>
           </div>
         </article>
-
-        <div>
-          <h2 id="sobre-a-tripway" style="font-weight: normal">Sobre a TripWay</h2>
-          <p style="font-weight: bold">
-            A TripWay é uma empresa de viagens que busca facilitar a descoberta
-            de novos destinos e experiências. Nosso objetivo é ajudar viajantes
-            a conhecer diferentes lugares, encontrar opções de viagem e planejar
-            momentos especiais de forma simples e prática.
-          </p>
-        </div>
       </section>
-      <footer>©️ 2026 TripWay. Todos os direitos reservados.</footer>
+
+      <section id="sobre-a-tripway">
+        <h2 style="font-weight: normal">Sobre a TripWay</h2>
+        <p style="font-weight: bold">
+          A TripWay é uma empresa de viagens que busca facilitar a descoberta de
+          novos destinos e experiências. Nosso objetivo é ajudar viajantes a
+          conhecer diferentes lugares, encontrar opções de viagem e planejar
+          momentos especiais de forma simples e prática.
+        </p>
+      </section>
     </main>
+    <footer>©️ 2026 TripWay. Todos os direitos reservados.</footer>
   </body>
 </html>
