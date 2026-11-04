@@ -329,3 +329,83 @@ footer {
   padding: 1.5rem 1rem;
   font-size: 0.875rem;
 }
+
+/* ===== Tablet ===== */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 1.5rem 0;
+  }
+
+  .card {
+    min-width: 40%;
+    max-width: 48%;
+  }
+
+  #hero,
+  .contato-container {
+    gap: 1.5rem;
+  }
+
+  #sobre-a-tripway,
+  .formulario {
+    padding: 1.5rem;
+  }
+}
+
+/* ===== Celular ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .nav-link {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  #hero,
+  .contato-container,
+  .form-linha {
+    flex-direction: column;
+  }
+
+  #hero {
+    min-height: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-texto,
+  .hero-img,
+  .contato-img,
+  .formulario {
+    width: 100%;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
