@@ -6,84 +6,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="./css/style.css" />
     <title>TripWay</title>
   </head>
-  <body style="font-family: Poppins">
-    <header>
+  <body>
+    <header class="site-header">
       <nav>
-        <a href="./index.html">
-          <p>TripWay</p>
-        </a>
+        <a href="./index.html" class="logo">Trip<span>Way</span></a>
 
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/destinos.html">Destinos</a></li>
-          <li><a href="./pages/pacotes.html">Pacotes</a></li>
-          <li><a href="./pages/contato.html">Contato</a></li>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="nav-link active">Home</a></li>
+          <li><a href="./pages/destinos.html" class="nav-link">Destinos</a></li>
+          <li><a href="./pages/pacotes.html" class="nav-link">Pacotes</a></li>
+          <li><a href="./pages/contato.html" class="nav-link">Contato</a></li>
         </ul>
       </nav>
-      <h1>Descubra novos destinos e experiências com a TripWay.</h1>
-
-      <img
-        src="./images/banner.jpg"
-        alt="Vista aérea de Fernando de Noronha com mar azul e coqueiros"
-        width="600"
-        height="400"
-      />
-
-      <p>Viagens que começam com um destino e terminam em histórias.</p>
     </header>
 
     <main>
+      <section id="hero">
+        <div class="hero-texto">
+          <h1>Descubra novos destinos e experiências com a TripWay.</h1>
+          <p>Viagens que começam com um destino e terminam em histórias.</p>
+          <a href="./pages/destinos.html" class="btn">Conhecer destinos</a>
+        </div>
+
+        <img
+          class="hero-img"
+          src="./images/banner.jpg"
+          alt="Vista aérea de Fernando de Noronha com mar azul e coqueiros"
+          width="600"
+          height="400"
+        />
+      </section>
+
       <section>
-        <h2>Viagens em destaque</h2>
+        <h2 class="secao-titulo">Viagens em destaque</h2>
 
-        <article>
-          <div>
-            <p>BRASIL</p>
-
-            <h2 style="font-weight: normal">Praia do Forte</h2>
-
+        <div class="cards-container">
+          <article class="card">
             <img
               src="./images/praia.jpg"
               alt="Praia do Forte"
               width="400"
               height="250"
             />
+            <div class="card-conteudo">
+              <p class="tag">BRASIL</p>
+              <h3>Praia do Forte</h3>
+              <p>Restaurantes, atividades ao ar livre e belas praias.</p>
+              <a href="./pages/destinos.html" class="btn">Conhecer roteiro</a>
+            </div>
+          </article>
 
-            <p>Restaurantes, atividades ao ar livre e belas praias.</p>
-
-            <a href="./pages/destinos.html"> Conhecer roteiro </a>
-          </div>
-        </article>
-
-        <article>
-          <div>
-            <p>BRASIL</p>
-
-            <h2 style="font-weight: normal">Chapada Diamantina</h2>
-
+          <article class="card">
             <img
               src="./images/montanha.jpg"
               alt="Paisagem da Chapada Diamantina"
               width="400"
               height="250"
             />
-
-            <p>Cachoeiras, cânions e caminhos pelo coração da Bahia.</p>
-
-            <a href="./pages/destinos.html"> Conhecer roteiro </a>
-          </div>
-        </article>
+            <div class="card-conteudo">
+              <p class="tag">BRASIL</p>
+              <h3>Chapada Diamantina</h3>
+              <p>Cachoeiras, cânions e caminhos pelo coração da Bahia.</p>
+              <a href="./pages/destinos.html" class="btn">Conhecer roteiro</a>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="sobre-a-tripway">
-        <h2 style="font-weight: normal">Sobre a TripWay</h2>
-        <p style="font-weight: bold">
+        <h2>Sobre a TripWay</h2>
+        <p>
           A TripWay é uma empresa de viagens que busca facilitar a descoberta de
           novos destinos e experiências. Nosso objetivo é ajudar viajantes a
           conhecer diferentes lugares, encontrar opções de viagem e planejar
@@ -91,6 +89,7 @@
         </p>
       </section>
     </main>
-    <footer>©️ 2026 TripWay. Todos os direitos reservados.</footer>
+
+    <footer>© 2026 TripWay. Todos os direitos reservados.</footer>
   </body>
 </html>
