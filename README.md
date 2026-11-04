@@ -61,6 +61,22 @@ tripway/
 │   ├── banner.jpg
 │   ├── praia.jpg
 │   ├── montanha.jpg
-│   └── cidade.jpg
+│   ├── cidade.jpg
+│   └── prints/
 └── README.md
 ```
+
+## Site publicado
+
+[Acessar o TripWay no GitHub Pages](https://grupodeestudos1.github.io/tripwayCP1/)
+
+## Prints do projeto
+
+### Desktop
+
+![Home no desktop](./images/prints/home-desktop.png)
+![Destinos no desktop](./images/prints/destinos-desktop.png)
+
+### Celular
+
+<img src="./images/prints/home-mobile.png" alt="Home no celular" width="300"> <img src="./images/prints/contato-mobile.png" alt="Contato no celular" width="300">
