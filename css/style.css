@@ -1,0 +1,29 @@
+/* ===== Variáveis ===== */
+:root {
+  --cor-primaria: #0e5e6f;
+  --cor-primaria-escura: #08414d;
+  --cor-destaque: #f2994a;
+  --cor-destaque-escura: #d97b28;
+  --cor-fundo: #f7f5f0;
+  --cor-card: #ffffff;
+  --cor-texto: #1f2933;
+  --cor-texto-suave: #5f6b76;
+  --cor-borda: #e2ded5;
+
+  --sombra: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+  --sombra-hover: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+  --raio: 0.75rem;
+}
+
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
