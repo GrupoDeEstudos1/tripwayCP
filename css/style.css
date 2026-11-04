@@ -236,3 +236,96 @@ nav {
   color: var(--cor-primaria);
   font-size: 1.5rem;
 }
+
+/* ===== Sobre ===== */
+#sobre-a-tripway {
+  background-color: var(--cor-primaria);
+  color: var(--cor-card);
+  padding: 2.5rem;
+  border-radius: var(--raio);
+}
+
+#sobre-a-tripway h2 {
+  color: var(--cor-destaque);
+  margin-bottom: 1rem;
+}
+
+/* ===== Contato ===== */
+.contato-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.contato-img {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contato-img img {
+  width: 100%;
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+.formulario {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.5rem;
+  background-color: var(--cor-card);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-linha {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-linha .form-grupo {
+  flex: 1;
+}
+
+.formulario label {
+  font-weight: 500;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 0.125rem solid var(--cor-borda);
+  border-radius: 0.5rem;
+  background-color: var(--cor-fundo);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--cor-texto);
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--cor-primaria-escura);
+  color: var(--cor-card);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.875rem;
+}
