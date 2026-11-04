@@ -6,35 +6,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Pacotes</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Pacotes | TripWay</title>
   </head>
 
-  <body style="font-family: Poppins">
-    <header>
+  <body>
+    <header class="site-header">
       <nav>
-        <a href="../index.html">
-          <p>TripWay</p>
-        </a>
+        <a href="../index.html" class="logo">Trip<span>Way</span></a>
 
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./destinos.html">Destinos</a></li>
-          <li><a href="./pacotes.html">Pacotes</a></li>
-          <li><a href="./contato.html">Contato</a></li>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="./destinos.html" class="nav-link">Destinos</a></li>
+          <li><a href="./pacotes.html" class="nav-link active">Pacotes</a></li>
+          <li><a href="./contato.html" class="nav-link">Contato</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Pacotes</h1>
+      <h1 class="titulo-pagina">Pacotes</h1>
+      <p class="subtitulo">Escolha o pacote ideal para a sua próxima viagem.</p>
 
-      <section id="pacotes" aria-label="Lista de pacotes de viagem">
-        <article>
-          <h2>Praia do Forte</h2>
-
+      <section
+        id="pacotes"
+        class="cards-container"
+        aria-label="Lista de pacotes de viagem"
+      >
+        <article class="card">
           <figure>
             <img
               src="../images/pacote-praia.jpg"
@@ -43,28 +45,26 @@
               height="400"
             />
           </figure>
-
-          <p>
-            Relaxe no litoral norte da Bahia, com praias de águas mornas,
-            piscinas naturais e o Projeto Tamar, que protege as tartarugas
-            marinhas.
-          </p>
-
-          <ul>
-            <li>5 dias e 4 noites</li>
-            <li>Hospedagem em pousada com café da manhã</li>
-            <li>Passeio às piscinas naturais</li>
-            <li>Visita ao Projeto Tamar</li>
-          </ul>
-
-          <p>A partir de <strong>R$ 2.890</strong> por pessoa</p>
-
-          <a href="./contato.html">Reservar este pacote</a>
+          <div class="card-conteudo">
+            <p class="tag">PACOTE PRAIA</p>
+            <h2>Praia do Forte</h2>
+            <p>
+              Relaxe no litoral norte da Bahia, com praias de águas mornas,
+              piscinas naturais e o Projeto Tamar, que protege as tartarugas
+              marinhas.
+            </p>
+            <ul class="card-lista">
+              <li>5 dias e 4 noites</li>
+              <li>Hospedagem em pousada com café da manhã</li>
+              <li>Passeio às piscinas naturais</li>
+              <li>Visita ao Projeto Tamar</li>
+            </ul>
+            <p class="preco">A partir de <strong>R$ 2.890</strong> por pessoa</p>
+            <a href="./contato.html" class="btn">Reservar este pacote</a>
+          </div>
         </article>
 
-        <article>
-          <h2>Chapada Diamantina</h2>
-
+        <article class="card">
           <figure>
             <img
               src="../images/pacote-chapada.jpg"
@@ -73,59 +73,99 @@
               height="400"
             />
           </figure>
-
-          <p>
-            Aventura e natureza em um dos destinos de ecoturismo mais procurados
-            do Brasil, com cachoeiras, grutas, mirantes e trilhas para todos os
-            níveis.
-          </p>
-
-          <ul>
-            <li>6 dias e 5 noites</li>
-            <li>Hospedagem em Lençóis</li>
-            <li>Trilha ao Morro do Pai Inácio</li>
-            <li>Visita à Cachoeira da Fumaça e ao Poço Azul</li>
-            <li>Guia credenciado incluso</li>
-          </ul>
-
-          <p>A partir de <strong>R$ 3.150</strong> por pessoa</p>
-
-          <a href="./contato.html">Reservar este pacote</a>
+          <div class="card-conteudo">
+            <p class="tag">PACOTE AVENTURA</p>
+            <h2>Chapada Diamantina</h2>
+            <p>
+              Aventura e natureza em um dos destinos de ecoturismo mais
+              procurados do Brasil, com cachoeiras, grutas, mirantes e trilhas
+              para todos os níveis.
+            </p>
+            <ul class="card-lista">
+              <li>6 dias e 5 noites</li>
+              <li>Hospedagem em Lençóis</li>
+              <li>Trilha ao Morro do Pai Inácio</li>
+              <li>Visita à Cachoeira da Fumaça e ao Poço Azul</li>
+              <li>Guia credenciado incluso</li>
+            </ul>
+            <p class="preco">A partir de <strong>R$ 3.150</strong> por pessoa</p>
+            <a href="./contato.html" class="btn">Reservar este pacote</a>
+          </div>
         </article>
-        <article>
-          <h2>Salvador</h2>
 
+        <article class="card">
           <figure>
             <img
               src="../images/pacote-salvador.jpg"
-              alt="Salvador"
+              alt="Vista do Elevador Lacerda e da Baía de Todos-os-Santos em Salvador"
               width="600"
               height="400"
             />
           </figure>
-
-          <p>
-            Descubra a primeira capital do Brasil: história, música, culinária
-            baiana e praias, tudo em um só destino.
-          </p>
-
-          <ul>
-            <li>4 dias e 3 noites</li>
-            <li>Hospedagem no centro histórico ou na orla</li>
-            <li>City tour pelo Pelourinho e Elevador Lacerda</li>
-            <li>Passeio ao Farol da Barra e Igreja do Bonfim</li>
-          </ul>
-
-          <p>A partir de <strong>R$ 2.170</strong> por pessoa</p>
-
-          <a href="./contato.html">Reservar este pacote</a>
+          <div class="card-conteudo">
+            <p class="tag">PACOTE CULTURAL</p>
+            <h2>Salvador</h2>
+            <p>
+              Descubra a primeira capital do Brasil: história, música, culinária
+              baiana e praias, tudo em um só destino.
+            </p>
+            <ul class="card-lista">
+              <li>4 dias e 3 noites</li>
+              <li>Hospedagem no centro histórico ou na orla</li>
+              <li>City tour pelo Pelourinho e Elevador Lacerda</li>
+              <li>Passeio ao Farol da Barra e Igreja do Bonfim</li>
+            </ul>
+            <p class="preco">A partir de <strong>R$ 2.170</strong> por pessoa</p>
+            <a href="./contato.html" class="btn">Reservar este pacote</a>
+          </div>
         </article>
       </section>
+
       <section>
-        <h2 id="sobre-a-tripway" style="font-weight: normal">
-          Sobre a TripWay
-        </h2>
-        <p style="font-weight: bold">
+        <h2 class="secao-titulo">Serviços</h2>
+
+        <div class="cards-container">
+          <article class="card">
+            <div class="card-conteudo">
+              <p class="tag">SERVIÇO</p>
+              <h3>Consultoria de viagem</h3>
+              <p>
+                Nossa equipe ajuda a escolher o destino ideal de acordo com o seu
+                perfil, orçamento e época do ano.
+              </p>
+              <a href="./contato.html" class="btn">Solicitar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-conteudo">
+              <p class="tag">SERVIÇO</p>
+              <h3>Reserva de hospedagem</h3>
+              <p>
+                Encontramos e reservamos hotéis e pousadas com o melhor custo
+                benefício para a sua viagem.
+              </p>
+              <a href="./contato.html" class="btn">Solicitar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-conteudo">
+              <p class="tag">SERVIÇO</p>
+              <h3>Roteiro personalizado</h3>
+              <p>
+                Montamos um roteiro dia a dia com passeios, restaurantes e dicas
+                pensadas para você.
+              </p>
+              <a href="./contato.html" class="btn">Solicitar</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="sobre-a-tripway">
+        <h2>Sobre a TripWay</h2>
+        <p>
           A TripWay é uma empresa de viagens que busca facilitar a descoberta de
           novos destinos e experiências. Nosso objetivo é ajudar viajantes a
           conhecer diferentes lugares, encontrar opções de viagem e planejar
@@ -133,6 +173,7 @@
         </p>
       </section>
     </main>
-    <footer>©️ 2026 TripWay. Todos os direitos reservados.</footer>
+
+    <footer>© 2026 TripWay. Todos os direitos reservados.</footer>
   </body>
 </html>
