@@ -27,3 +27,43 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* ===== Base ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+main {
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--cor-primaria-escura);
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--cor-destaque-escura);
+}
